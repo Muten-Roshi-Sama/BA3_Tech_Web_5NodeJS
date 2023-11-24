@@ -1,0 +1,11 @@
+<a href="/user/add">Add name</a>
+<h1>User list</h1>
+<ul>
+    <% for (let i=0; i < users.length ; i++){%>
+    <li>
+        <%= users[i].lastname %> <%= users[i].firstname %>
+        <a href="/user/update/<%= users[i].iduser %>">Change</a>
+        <a href="/user/delete/<%= users[i].iduser %>">delete</a>
+    </li>
+    <% } %>
+</ul>

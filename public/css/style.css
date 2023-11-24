@@ -1,0 +1,10 @@
+body {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    color : blueviolet;
+}
+
+h1 {
+    text-align: center;
+}
