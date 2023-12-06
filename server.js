@@ -1,4 +1,4 @@
-PORT = 8002;
+PORT = 8000;
 
 const { get } = require('http');
 let connection = require('./db.js'); // to make a var accessible, use module.exports
@@ -11,9 +11,11 @@ app.use(express.urlencoded({extended : true}));  //to use .body
 
 //--------------Paths-----------------------
 app.get('/', (req, res)=>{
-    res.send('Hello');
+    // res.send('Hello');
     console.log(req.body);
     //response.render("home.ejs", {});
+    res.render("home.ejs");
+    
 });
 
 app.get("/user", (req, res)=>{
